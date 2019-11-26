@@ -174,8 +174,8 @@ const Seo = ({
 export default Seo;
 
 Seo.propTypes = {
-    title: PropTypes.string.isRequired,
-    desc: PropTypes.string.isRequired,
+    title: PropTypes.string,
+    desc: PropTypes.string,
     banner: PropTypes.string,
     pathname: PropTypes.string,
     article: PropTypes.bool,
@@ -183,6 +183,8 @@ Seo.propTypes = {
 };
 
 Seo.defaultProps = {
+    title: null,
+    desc: null,
     banner: null,
     pathname: null,
     article: false,
