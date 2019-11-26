@@ -1,21 +1,44 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { Component } from 'react';
+import TypeIt from 'typeit';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from '../components/layout';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+import './home.scss';
 
-export default IndexPage
+class Index extends Component {
+    componentDidMount() {
+        const thirdText = new TypeIt('#welcome-text-row-3', {
+            speed: 100,
+            cursor: false,
+        });
+        const secondText = new TypeIt('#welcome-text-row-2', {
+            speed: 100,
+            cursor: false,
+            afterComplete: () => {
+                thirdText.go();
+            },
+        });
+        const firstText = new TypeIt('#welcome-text-row-1', {
+            speed: 100,
+            cursor: false,
+            afterComplete: () => {
+                secondText.go();
+            },
+        });
+        firstText.go();
+    }
+
+    render() {
+        return (
+            <Layout>
+                <div className="home">
+                    <h5 id="welcome-text-row-1" className="welcome-text-row">Hi, my name is</h5>
+                    <h2 id="welcome-text-row-2" className="welcome-text-row">Sanjin Šarić</h2>
+                    <h5 id="welcome-text-row-3" className="welcome-text-row">Software Engineer</h5>
+                </div>
+            </Layout>
+        );
+    }
+}
+
+export default Index;
