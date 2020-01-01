@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Comtrade from '../images/ct_logo.png';
 import Evomecs from '../images/evomecs_logo.png';
@@ -7,10 +8,18 @@ import GlobalGPS from '../images/globalgps_logo.png';
 
 import './description.scss';
 
+const currentDate = moment();
+const dateOfBirth = moment('1991-10-03');
+const startWorkingDate = moment('2015-04-01');
+
+const age = currentDate.diff(dateOfBirth, 'years');
+const exp = currentDate.diff(startWorkingDate, 'years');
+
+
 const description = () => (
     <div className="description">
         <h4 className="description__title">ABOUT ME</h4>
-        <span className="description__simple-info body-1">28 years old | 5 years experience | Sarajevo, Bosnia and Herzegovina</span>
+        <span className="description__simple-info body-1">{`${age} years old | ${exp} years experience | Sarajevo, Bosnia and Herzegovina`}</span>
         <span className="description__description body-1">Full stack developer with accent on frontend, specialied in React + Redux and vanilla JavaScript.</span>
         <span className="description__content body-1">
 With higher education in telecommunications, transitioned into web development. Started as a backend developer,  but soon into the career got familiar with frontend as well. Worked with various technologies and languages some of them being: JS ecosystem, WebGL, Ruby on Rails and .NET. Focused on implementing robust, UX friendly features with minimum cognitive friction. When not coding, I am Researching UX topics, some of which are: psychology in web design, UI, HCI, and design thinking. Always up for a new challange and known for taking initiative
