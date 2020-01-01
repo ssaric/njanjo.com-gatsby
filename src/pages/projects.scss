@@ -1,6 +1,6 @@
 @import '../scss/theme';
 
-.about {
+.projects {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -12,7 +12,7 @@
 }
 
 @media all and (max-width: $breakpoint-large) {
-  .about {
+  .projects {
     padding: 0;
   }
 }

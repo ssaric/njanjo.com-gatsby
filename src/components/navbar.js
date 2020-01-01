@@ -16,7 +16,7 @@ function Navbar() {
             </div>
             <div className="navbar__links-wrapper">
                 <Link className="navbar__link" href="/about" icon="user-circle" text="About" />
-                {/* <Link className="navbar__link" href="/projects" icon="code" text="Projects" /> */}
+                <Link className="navbar__link" href="/projects" icon="code" text="Projects" />
             </div>
         </nav>
     );

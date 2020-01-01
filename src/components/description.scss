@@ -110,8 +110,12 @@
 
 .company {
   display: flex;
-  align-items: center;
   margin-bottom: 10px;
+}
+
+.company__name {
+  display: flex;
+  flex-direction: column;
 }
 
 .company__logo {
@@ -119,6 +123,9 @@
   width: 30px;
   object-fit: scale-down;
   margin-right: 10px;
+}
+.company__role {
+  font-weight: bold;
 }
 
 .company__title {
