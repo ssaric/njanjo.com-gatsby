@@ -11,7 +11,13 @@ function Navbar() {
     const [expanded, setExpanded] = useState(false);
     return (
         <nav className={classNames('navbar', { 'navbar--expanded': expanded })}>
-            <div onClick={() => setExpanded(!expanded)} className="navbar-button">
+            <div
+                onClick={() => {
+                    if (window.matchMedia('all and (max-width: 1264px)').matches) return;
+                    setExpanded(prevExpanded => !prevExpanded);
+                }}
+                className="navbar-button"
+            >
                 <Logo />
             </div>
             <div className="navbar__links-wrapper">

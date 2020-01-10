@@ -6,7 +6,7 @@ import GlobalGPS from './images/globalgps_logo.png';
 export default [
     {
         title: 'Comtrade',
-        startDate: 'December 2019',
+        startDate: 'Dec 2019',
         endDate: 'Present',
         role: 'Lead Engineer',
         logo: Comtrade,
@@ -18,8 +18,8 @@ export default [
     },
     {
         title: 'Evomecs GmbH',
-        startDate: 'January 2019',
-        endDate: 'October 2019',
+        startDate: 'Jan 2019',
+        endDate: 'Oct 2019',
         role: 'Software Engineer',
         logo: Evomecs,
         responsibilities: [
@@ -32,8 +32,8 @@ export default [
     },
     {
         title: 'Social Explorer Inc.',
-        startDate: 'March 2016',
-        endDate: 'January 2019',
+        startDate: 'Mar 2016',
+        endDate: 'Jan 2019',
         role: 'Software Engineer',
         logo: Socex,
         responsibilities: [
@@ -46,8 +46,8 @@ export default [
     },
     {
         title: 'GlobalGPS BH',
-        startDate: 'April 2015',
-        endDate: 'March 2016',
+        startDate: 'Apr 2015',
+        endDate: 'Mar 2016',
         role: 'Software Engineer',
         logo: GlobalGPS,
         responsibilities: [

@@ -1,0 +1,57 @@
+@import "../scss/theme";
+.socials {
+  padding: 15px;
+  display: flex;
+  width: 690px;
+  background-color: $color-neutral60;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media all and (max-width: $breakpoint-large) {
+  .socials {
+    width: 100%;
+    flex-direction: column;
+  }
+  .social {
+    margin-bottom: 20px;
+  }
+}
+
+
+.social {
+  position: relative;
+  flex-direction: column;
+  width: 200px;
+  .btn__text {
+    text-transform: none;
+  }
+  .btn__icon {
+    margin: 0 0 5px;
+  }
+}
+
+
+.email {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social__status-text {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.social__status-text--visible {
+  opacity: 1;
+  visibility: visible;
+}
+

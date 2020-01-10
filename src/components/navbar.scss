@@ -16,7 +16,8 @@
 }
 
 .navbar-button {
-  width: 40px;
+  min-width: 40px;
+  max-width: 40px;
   height: 40px;
   cursor: pointer;
 }
@@ -42,6 +43,12 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 20px;
+  }
+  .navbar__link {
+    width: auto;
+    .btn__text {
+      display: none;
+    }
   }
   .navbar__links-wrapper {
     width: 500px;

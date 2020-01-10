@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TypeIt from 'typeit';
+import Logo from '../images/logo.svg';
 
 import Layout from '../components/layout';
 
@@ -31,6 +32,7 @@ class Index extends Component {
     render() {
         return (
             <Layout>
+                <Logo className="logo" />
                 <div className="home">
                     <h5 id="welcome-text-row-1" className="welcome-text-row">Hi, my name is</h5>
                     <h2 id="welcome-text-row-2" className="welcome-text-row">Sanjin Šarić</h2>

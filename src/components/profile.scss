@@ -2,7 +2,7 @@
 
 .profile {
   height: 800px;
-  width: 500px;
+  width: 690px;
   background-color: $color-neutral60;
   display: flex;
   position: relative;
@@ -12,6 +12,7 @@
 
 .profile-pic {
   max-height: 100%;
+  max-width:100%;
 }
 
 @media all and (max-width: $breakpoint-large) {

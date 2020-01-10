@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import cn from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 const LinkWrapper = ({
     href, icon, text, className,
 }) => (
     <a href={href}>
-        <button type="button" className={className}>
+        <button type="button" className={cn('btn-primary', className)}>
             <div className="btn__icon">
                 <FontAwesomeIcon icon={icon} />
             </div>
