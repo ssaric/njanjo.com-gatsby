@@ -11,7 +11,10 @@ export default function HTML(props) {
                     name="viewport"
                     content="width=device-width, initial-scale=1, shrink-to-fit=no"
                 />
-                <script>
+                <script
+                    type="text/javascript"
+                    dangerouslySetInnerHTML={{
+                        __html: `
                     (function(f, a, t, h, o, m){
                     a[h]=a[h]||function(){
                         (a[h].q=a[h].q||[]).push(arguments)
@@ -23,7 +26,9 @@ export default function HTML(props) {
                 })(document, window, '//fathom.njanjo.com/tracker.js', 'fathom');
                     fathom('set', 'siteId', 'HJMBL');
                     fathom('trackPageview');
-                </script>
+                    `,
+                    }}
+                />
                 <script
                     type="text/javascript"
                     dangerouslySetInnerHTML={{
