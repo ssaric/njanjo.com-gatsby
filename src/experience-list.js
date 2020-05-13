@@ -14,6 +14,10 @@ export default [
             'introduce a build environment for a new project',
             'refactoring eslint and typescript usage',
             'workshop host for React best practices',
+            'successfully refactored backend written in Nest.js + TypeORM to support multitenancy',
+            'improved code coverage (jest) by adding integration tests and more robust unit test on both backend and frontend of a big commercial app',
+            'gained familiarity with event sourcing (kafka)',
+            'groomed and created number of jira tasks',
         ],
     },
     {
