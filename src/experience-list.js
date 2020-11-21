@@ -17,6 +17,7 @@ export default [
             'successfully refactored backend written in Nest.js + TypeORM to support multitenancy',
             'improved code coverage (jest) by adding integration tests and more robust unit test on both backend and frontend of a big commercial app',
             'gained familiarity with event sourcing (kafka)',
+            'piloted creation of GitLab monitoring app',
             'groomed and created number of jira tasks',
         ],
     },

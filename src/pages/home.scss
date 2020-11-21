@@ -25,3 +25,14 @@
   height: 500px;
   opacity: 0.5
 }
+
+
+.about-me-link {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: $color-neutral60;
+  .btn__icon {
+    margin-right: 5px;
+  }
+}
