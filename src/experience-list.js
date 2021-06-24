@@ -1,3 +1,4 @@
+import Philipa from './images/philipa.png';
 import Comtrade from './images/ct_logo.png';
 import Evomecs from './images/evomecs_logo.png';
 import Socex from './images/socialexplorer_logo.png';
@@ -5,9 +6,23 @@ import GlobalGPS from './images/globalgps_logo.png';
 
 export default [
     {
+        title: 'Philipa Legal Tech',
+        startDate: 'Mar 2021',
+        endDate: 'Present',
+        role: 'Tech Lead',
+        logo: Philipa,
+        responsibilities: [
+            'introduce a build environment for monorepo',
+            'improved eslint and typescript project rules',
+            'CD implemented on Azure infrastructure',
+            'various UX designs',
+            'introduced a test environment for all projects',
+        ],
+    },
+    {
         title: 'Comtrade',
         startDate: 'Dec 2019',
-        endDate: 'Present',
+        endDate: 'Mar 2021',
         role: 'Lead Engineer',
         logo: Comtrade,
         responsibilities: [
