@@ -1,5 +1,5 @@
 # Stage 0, "build-stage", based on Node.js, to build and compile the frontend
-FROM node:10 as build-stage
+FROM node:14 as build-stage
 RUN npm install -g gatsby-cli
 # Setting working directory. All the path will be relative to WORKDIR
 WORKDIR /usr/src/app
