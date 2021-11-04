@@ -14,6 +14,7 @@ module.exports = {
     author: 'njanjo', // Author for schemaORGJSONLD
     themeColor: '#3D63AE',
     backgroundColor: '#EBEDF2',
+    defaultBanner: 'src/images/profile.jpg',
 
     skipNavId: 'reach-skip-nav', // ID for the "Skip to content" a11y feature
-}
+};
