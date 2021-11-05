@@ -14,7 +14,7 @@ const ExperienceListItem = ({
             <img alt={`${title}-pic`.toLocaleLowerCase()} className="company__logo" src={logo} />
             <div className="company__name">
                 <h5 className="company__title">{title}</h5>
-                <h7 className="company__role">{role}</h7>
+                <h6 className="company__role">{role}</h6>
             </div>
         </div>
         <div className="description-timeline__roles">

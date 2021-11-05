@@ -39,8 +39,8 @@ module.exports = {
                 name: 'Sanjin Šarić personal website',
                 short_name: 'Njanjo',
                 start_url: '/',
-                background_color: '#185032',
-                theme_color: '#185032',
+                background_color: '#3D63AE',
+                theme_color: '#3D63AE',
                 display: 'standalone',
                 icon: 'src/images/logo.svg', // This path is relative to the root of the site.
             },

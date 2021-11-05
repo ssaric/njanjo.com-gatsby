@@ -7,10 +7,11 @@ import SEO from './seo';
 import './head';
 
 import './root-container.scss';
+import Profile from '../images/profile.jpg';
 
 const Layout = props => (
     <div className="root-container">
-        <SEO />
+        <SEO banner={Profile} />
         <Navbar />
         {props.children}
     </div>

@@ -6,7 +6,7 @@ module.exports = {
     headline: 'Business info', // Headline for schema.org JSONLD
     url: 'https://www.njanjo.com', // Domain of your site. No trailing slash!
     siteLanguage: 'en', // Language Tag on <html> element
-    logo: '/logos/logo-1024.png', // Used for SEO
+    logo: 'src/images/profile.jpg', // Used for SEO
 
     // JSONLD / Manifest
     favicon: 'src/images/logo.svg', // Used for manifest favicon generation
