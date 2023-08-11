@@ -3,12 +3,25 @@ import Comtrade from './images/ct_logo.png';
 import Evomecs from './images/evomecs_logo.png';
 import Socex from './images/socialexplorer_logo.png';
 import GlobalGPS from './images/globalgps_logo.png';
+import Journee from './images/journee.webp';
 
 export default [
     {
+        title: 'Journee Technologies GmbH',
+        startDate: 'June 2023',
+        endDate: 'Present',
+        role: 'Senior Software Engineer',
+        logo: Journee,
+        responsibilities: [
+            'improve CI/CD pipelines',
+            'full stack feature development',
+            'curation and grooming of Clickup tasks',
+        ],
+    },
+    {
         title: 'Philipa Legal Tech',
         startDate: 'Mar 2021',
-        endDate: 'Present',
+        endDate: 'June 2023',
         role: 'Tech Lead',
         logo: Philipa,
         responsibilities: [
