@@ -19,7 +19,7 @@ const Navbar: FC<Props> = ({ className }) => {
                 'lg:h-full lg:w-[55px] flex lg:flex-col lg:justify-start bg-neutral-600',
                 'justify-start py-4 px-2',
                 'transition-[width] duration-[600ms] ease-[cubic-bezier(0.075,0.82,0.165,1)]',
-                'w-full h-[60px] flex-row justify-between py-2.5 px-5',
+                'w-full h-[60px] flex-row justify-between',
                 { '!w-[180px]': expanded },
                 className
             )}
