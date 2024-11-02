@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-neutral-700 fixed font-sans top-0 left-0 p-0 m-0 right-0 bottom-0 flex box-border;
+    }
+
+    *, *:before, *:after {
+        @apply box-border;
+    }
+
+    #___gatsby, #gatsby-focus-wrapper {
+        @apply w-full flex-grow-0 flex;
+    }
+
+    /* Typography */
+    h1, h2, h3, h4, h5, h6,
+    .subtitle-1, .subtitle-2, .body-1, .body-2, .button, .caption {
+        @apply text-neutral-50 m-0;
+    }
+
+    h1 {
+        @apply text-h1 font-normal;
+    }
+
+    h2 {
+        @apply text-h2 font-normal;
+    }
+
+    h3 {
+        @apply text-h3 font-medium;
+    }
+
+    h4 {
+        @apply text-h4 font-medium;
+    }
+
+    h5 {
+        @apply text-h5 font-normal;
+    }
+
+    h6 {
+        @apply text-h6 font-medium;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        @apply font-sans text-base leading-[1.15] m-0;
+    }
+
+    button,
+    input {
+        @apply overflow-visible;
+    }
+
+    button,
+    select {
+        @apply normal-case;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+        @apply appearance-none;
+    }
+}
+
+@layer components {
+
+    .subtitle-1 {
+        @apply text-subtitle1;
+    }
+
+    .subtitle-2 {
+        @apply text-subtitle2;
+    }
+
+    .body-1 {
+        @apply text-body1;
+    }
+
+    .body-2 {
+        @apply text-body2;
+    }
+
+    .button {
+        @apply text-button;
+    }
+
+    .caption {
+        @apply text-caption;
+    }
+
+    .btn-primary {
+        @apply relative m-0 px-3 py-[5px] h-[60px] w-[150px];
+        @apply outline-none no-underline flex justify-center items-center;
+        @apply cursor-pointer uppercase bg-transparent border-none;
+        @apply font-normal text-xl font-sans;
+        @apply z-0 overflow-hidden;
+        @apply transition-all duration-200 ease-[cubic-bezier(0.02,0.01,0.47,1)];
+    }
+
+    .btn__icon {
+        @apply text-white text-[30px] w-[40px] h-[40px] mr-[15px];
+        @apply flex items-center justify-center;
+        @apply transition-all duration-200 ease-[cubic-bezier(0.02,0.01,0.47,1)];
+        @apply group-hover:text-primary-300;
+    }
+
+    .btn__text {
+        @apply text-white text-base relative uppercase;
+        @apply transition-all duration-200 ease-[cubic-bezier(0.02,0.01,0.47,1)];
+        @apply group-hover:text-primary-300;
+    }
+}
