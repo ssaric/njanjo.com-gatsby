@@ -3,7 +3,7 @@ import Comtrade from './images/ct_logo.png';
 import Evomecs from './images/evomecs_logo.png';
 import Socex from './images/socialexplorer_logo.png';
 import GlobalGPS from './images/globalgps_logo.png';
-import Journee from './images/journee.webp';
+import Journee from './images/journee.png';
 
 export default [
     {
@@ -14,11 +14,10 @@ export default [
         logo: Journee,
         responsibilities: [
             'introduced E2E testing with Playwright',
-            'improved DX by introducing tools that provided useful information about the PR',
-            'pitched an idea for the direction of the product that was accepted',
-            'fully implemented a complex video conferencing feature',
-            'full stack feature development',
-            'curation and grooming of Clickup/Jira tasks',
+            'introduce developer tools that significantly improved DX and workflow velocity',
+            'led full-stack feature development while successfully pitching and steering product direction, demonstrating both technical excellence and strategic product vision.',
+            'architected and implemented complex features including a comprehensive video conferencing system, demonstrating deep expertise in full-stack development and system design',
+            'led the modernization of company\'s web presence by implementing a new website design using PHP and Tailwind CSS',
         ],
     },
     {
@@ -28,11 +27,10 @@ export default [
         role: 'Tech Lead',
         logo: Philipa,
         responsibilities: [
-            'introduce a build environment for monorepo',
-            'improved eslint and typescript project rules',
-            'CD implemented on Azure infrastructure',
-            'led and implemented number of features',
-            'introduced a test environment for all projects',
+            'led technical strategy and architecture decisions while establishing agile methodologies and processes, including implementation of Nx monorepo that significantly improved project structure and team collaboration',
+            'drove UX-focused feature development and mentored junior developers, while architecting and implementing two critical internal tools that enhanced team productivity',
+            'engineered comprehensive QA automation infrastructure using Cypress.io and designed robust CI/CD pipelines for Azure deployment, ensuring code quality and reliable delivery',
+            'spearheaded full-stack development initiatives using React.js and .NET Core, making key technical decisions that shaped the project\'s architecture and technology stack',
         ],
     },
     {

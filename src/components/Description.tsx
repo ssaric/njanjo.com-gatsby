@@ -31,13 +31,7 @@ const Description: FC = () => (
     </span>
 
         <span className="mb-5 text-body1 text-neutral-50">
-      With higher education in telecommunications, transitioned into web development.
-      Started as a backend developer, but soon into the career got familiar with frontend as well.
-      Worked with various technologies and languages some of them being: JS ecosystem, WebGL,
-      Ruby on Rails and .NET. Focused on implementing robust, UX friendly features with minimum
-      cognitive friction. When not coding, I am Researching UX topics, some of which are:
-      psychology in web design, UI, HCI, and design thinking. Always up for a new challange
-      and known for taking initiative
+      With over a decade of experience across frontend and backend development, my journey began in telecommunications before transitioning into web development. Starting as a backend developer, I quickly expanded into frontend, working various technologies including JS ecosystem, WebGL, Ruby on Rails, and .NET. Known for implementing robust, UX-friendly features with minimum cognitive friction, I've grown to lead projects and oversee feature implementation with a strong focus on delivering results and removing ambiguities. My expertise extends to understanding AI systems and their practical applications. When not coding, I dedicate time to researching UX topics including psychology in web design, UI, HCI, design thinking, and deep learning. Recognized for taking initiative and embracing new challenges, I bring a comprehensive approach to software development that combines technical expertise with strategic thinking.
     </span>
 
         <span className="absolute top-5 right-5 w-[172px] italic text-center text-caption text-neutral-50">
