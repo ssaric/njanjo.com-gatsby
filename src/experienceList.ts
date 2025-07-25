@@ -4,12 +4,22 @@ import Evomecs from './images/evomecs_logo.png';
 import Socex from './images/socialexplorer_logo.png';
 import GlobalGPS from './images/globalgps_logo.png';
 import Journee from './images/journee.png';
+import Prezi from './images/prezi.png';
 
 export default [
+
+    {
+        title: 'Prezi',
+        startDate: 'June 2025',
+        endDate: 'Present',
+        role: 'Senior Software Engineer',
+        logo: Prezi,
+        responsibilities: []
+    },
     {
         title: 'Journee Technologies GmbH',
         startDate: 'June 2023',
-        endDate: 'Present',
+        endDate: 'June 2025',
         role: 'Senior Software Engineer',
         logo: Journee,
         responsibilities: [
