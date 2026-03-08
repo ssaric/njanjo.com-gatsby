@@ -32,8 +32,8 @@ const Description: FC = () => (
             </div>
             <div className="w-px bg-neutral-500" />
             <div className="flex flex-col">
-                <span className="text-primary-200 text-[24px] font-bold leading-none">Sarajevo</span>
-                <span className="text-neutral-300 text-caption uppercase tracking-wider mt-1">Bosnia & Herzegovina</span>
+                <span className="text-primary-200 text-[24px] font-bold leading-none">Langenfeld 🇩🇪</span>
+                <span className="text-neutral-300 text-caption uppercase tracking-wider mt-1">Germany</span>
             </div>
         </div>
 
