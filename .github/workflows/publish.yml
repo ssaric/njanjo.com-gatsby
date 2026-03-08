@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v4
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
       - name: Login to DockerHub
@@ -17,17 +17,14 @@ jobs:
           registry: ${{ env.REGISTRY }}
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'yarn'
       - name: Install dependencies
-        run: |
-          yarn install --immutable
-      - name: Install Gatsby CLI
-        run: npm install -g gatsby-cli
+        run: yarn install --immutable
       - name: Build
-        run: gatsby build
+        run: yarn build
       - name: Extract metadata (tags, labels) for Backend Docker
         id: meta
         uses: docker/metadata-action@v5
