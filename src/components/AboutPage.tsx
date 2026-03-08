@@ -19,8 +19,8 @@ const AboutPage: FC = () => (
                 animate-fade-up
             ">
                 <Profile />
-                <div className="flex flex-col justify-center flex-1 p-6 lg:p-10">
-                    <span className="text-primary-200 text-caption font-semibold tracking-widest uppercase mb-2">
+                <div className="flex flex-col justify-end flex-1 p-6 lg:p-10">
+                    <span className="text-primary-200 text-caption font-semibold tracking-widest uppercase mb-3">
                         About me
                     </span>
                     <Socials />

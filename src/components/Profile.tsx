@@ -5,7 +5,7 @@ import ProfileImage from '../images/profile.jpg';
 const Profile: FC = () => (
     <div className="
         bg-neutral-600 relative
-        w-full lg:w-[300px] xl:w-[340px]
+        w-full lg:w-[400px] xl:w-[450px] lg:h-[400px]
         flex-shrink-0 overflow-hidden
     ">
         <img
