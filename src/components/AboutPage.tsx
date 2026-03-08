@@ -7,17 +7,30 @@ import Socials from './Socials';
 
 const AboutPage: FC = () => (
     <Layout>
-        <div className={`
-            flex lg:flex-row flex-1 flex-col
-            lg:items-start lg:justify-center
-            overflow-y-auto lg:pt-[100px] gap-x-4
+        <div className="
+            flex flex-1 flex-col
+            overflow-y-auto
             p-0
-        `}>
-            <div className="w-full lg:w-1/2 xl:w-1/3 flex flex-col">
+        ">
+            {/* Hero header */}
+            <div className="
+                w-full bg-neutral-600
+                flex flex-col lg:flex-row items-center lg:items-stretch
+                animate-fade-up
+            ">
                 <Profile />
-                <Socials />
+                <div className="flex flex-col justify-center flex-1 p-6 lg:p-10">
+                    <span className="text-primary-200 text-caption font-semibold tracking-widest uppercase mb-2">
+                        About me
+                    </span>
+                    <Socials />
+                </div>
             </div>
-            <Description />
+
+            {/* Main content */}
+            <div className="animate-fade-up delay-200">
+                <Description />
+            </div>
         </div>
     </Layout>
 );
