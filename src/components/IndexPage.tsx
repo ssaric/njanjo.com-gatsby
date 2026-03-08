@@ -66,8 +66,8 @@ const IndexPage: FC = () => (
                     </div>
                     <div className="w-px bg-neutral-500" />
                     <div className="flex flex-col">
-                        <span className="text-primary-200 text-[28px] font-bold leading-none">E2E</span>
-                        <span className="text-neutral-300 text-caption uppercase tracking-wider mt-1">Delivery</span>
+                        <span className="text-primary-200 text-[28px] font-bold leading-none">End to End</span>
+                        <span className="text-neutral-300 text-caption uppercase tracking-wider mt-1">Feature Delivery</span>
                     </div>
                     <div className="w-px bg-neutral-500" />
                     <div className="flex flex-col">
