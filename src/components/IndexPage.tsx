@@ -66,13 +66,13 @@ const IndexPage: FC = () => (
                     </div>
                     <div className="w-px bg-neutral-500" />
                     <div className="flex flex-col">
-                        <span className="text-primary-200 text-[28px] font-bold leading-none">7</span>
-                        <span className="text-neutral-300 text-caption uppercase tracking-wider mt-1">Companies</span>
+                        <span className="text-primary-200 text-[28px] font-bold leading-none">E2E</span>
+                        <span className="text-neutral-300 text-caption uppercase tracking-wider mt-1">Delivery</span>
                     </div>
                     <div className="w-px bg-neutral-500" />
                     <div className="flex flex-col">
-                        <span className="text-primary-200 text-[28px] font-bold leading-none">React</span>
-                        <span className="text-neutral-300 text-caption uppercase tracking-wider mt-1">Focused</span>
+                        <span className="text-primary-200 text-[28px] font-bold leading-none">Full Stack</span>
+                        <span className="text-neutral-300 text-caption uppercase tracking-wider mt-1">Engineering</span>
                     </div>
                 </div>
 
