@@ -13,7 +13,7 @@ import {
 import {
     faGithub,
     faLinkedin
-} from "@fortawesome/fontawesome-free-brands";
+} from "@fortawesome/free-brands-svg-icons";
 
 const iconMap = {
     'user-circle': faUserCircle,

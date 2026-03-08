@@ -1,18 +1,21 @@
 // components/Description.tsx
 import React from 'react';
 import type { FC } from 'react';
-import moment from 'moment';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Experience from '../experienceList';
 import ExperienceListItem from './ExperienceListItem';
 import {faBriefcase, faGraduationCap} from "@fortawesome/free-solid-svg-icons";
 
-const currentDate = moment();
-const dateOfBirth = moment('1991-10-03');
-const startWorkingDate = moment('2015-04-01');
+const diffInYears = (from: Date, to: Date) => {
+    let years = to.getFullYear() - from.getFullYear();
+    const monthDiff = to.getMonth() - from.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && to.getDate() < from.getDate())) years--;
+    return years;
+};
 
-const age = currentDate.diff(dateOfBirth, 'years');
-const exp = currentDate.diff(startWorkingDate, 'years');
+const now = new Date();
+const age = diffInYears(new Date('1991-10-03'), now);
+const exp = diffInYears(new Date('2015-04-01'), now);
 
 const Description: FC = () => (
     <div className="
@@ -27,7 +30,7 @@ const Description: FC = () => (
     </span>
 
         <span className="font-bold mb-[15px] text-body1 text-neutral-50">
-      Full stack developer with accent on frontend, specialied in React + Redux and vanilla JavaScript.
+      Full stack developer with accent on frontend, specialized in React + Redux and vanilla JavaScript.
     </span>
 
         <span className="mb-5 text-body1 text-neutral-50">
