@@ -13,14 +13,18 @@ declare module "*.webp" {
     export default content;
 }
 
-declare module "*.svg" {
+declare module "*.svg?react" {
     import * as React from "react"
-    export const ReactComponent: React.FunctionComponent<
+    const component: React.FunctionComponent<
         React.SVGProps<SVGSVGElement> & { title?: string }>
+    export default component
+}
 
+declare module "*.svg" {
     const src: string
     export default src
 }
+
 declare module "*.gif" {
     const content: string;
     export default content;

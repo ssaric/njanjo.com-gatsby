@@ -11,8 +11,8 @@
         @apply box-border;
     }
 
-    #___gatsby, #gatsby-focus-wrapper {
-        @apply w-full flex-grow-0 flex;
+    astro-island {
+        display: contents;
     }
 
     /* Typography */

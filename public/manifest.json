@@ -1,0 +1,9 @@
+{
+    "name": "Sanjin Šarić personal website",
+    "short_name": "Njanjo",
+    "start_url": "/",
+    "background_color": "#EBEDF2",
+    "theme_color": "#3D63AE",
+    "display": "minimal-ui",
+    "icons": []
+}

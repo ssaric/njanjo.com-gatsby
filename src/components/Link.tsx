@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link as GatsbyLink } from 'gatsby';
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { FC } from 'react';
@@ -37,34 +36,19 @@ const LinkWrapper: FC<LinkWrapperProps> = ({
                                                icon,
                                                text,
                                                className,
-                                           }) => {
-    const isInternal = href.startsWith('/');
-
-    return (
-        isInternal ? (
-            <GatsbyLink to={href}>
-                <button type="button" className={classNames('btn-primary group', className)}>
-                    <div className="btn__icon">
-                        <FontAwesomeIcon icon={iconMap[icon]} size="1x" />
-                    </div>
-                    <span className="body-1 btn__text">{text}</span>
-                </button>
-            </GatsbyLink>
-        ) : (
-            <a
-                href={href}
-                rel="noopener noreferrer"
-                target={href.startsWith('http') ? '_blank' : undefined}
-            >
-                <button type="button" className={classNames('btn-primary group', className)}>
-                    <div className="btn__icon">
-                        <FontAwesomeIcon icon={iconMap[icon]} size="1x" />
-                    </div>
-                    <span className="body-1 btn__text">{text}</span>
-                </button>
-            </a>
-        )
-    );
-};
+                                           }) => (
+    <a
+        href={href}
+        rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+        target={href.startsWith('http') ? '_blank' : undefined}
+    >
+        <button type="button" className={classNames('btn-primary group', className)}>
+            <div className="btn__icon">
+                <FontAwesomeIcon icon={iconMap[icon]} size="1x" />
+            </div>
+            <span className="body-1 btn__text">{text}</span>
+        </button>
+    </a>
+);
 
 export default LinkWrapper;

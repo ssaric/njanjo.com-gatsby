@@ -1,11 +1,10 @@
-// pages/index.tsx
 import React from 'react';
-import type {FC} from 'react';
-import {ReactComponent as Logo} from '../images/logo.svg';
-import Layout from '../components/Layout';
-import Link from '../components/Link';
+import type { FC } from 'react';
+import Logo from '../images/logo.svg?react';
+import Layout from './Layout';
+import Link from './Link';
 
-const Index: FC = () => (
+const IndexPage: FC = () => (
     <Layout>
         <div className="flex items-center relative w-full h-full">
             <Logo className="fixed top-[calc(50%-250px)] left-[calc(50%-250px)] z-10 fill-primary-300/50 h-[500px]"/>
@@ -24,4 +23,4 @@ const Index: FC = () => (
     </Layout>
 );
 
-export default Index;
+export default IndexPage;

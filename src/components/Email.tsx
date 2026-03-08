@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react';
 import type { FC } from 'react';
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+import pkg from 'react-copy-to-clipboard';
+const { CopyToClipboard } = pkg;
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 const EMAIL = "sanjin.saric1991@gmail.com";

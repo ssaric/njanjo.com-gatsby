@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/global.css';
+import IndexPage from '../components/IndexPage';
+---
+
+<BaseLayout>
+    <IndexPage client:load />
+</BaseLayout>

@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/global.css';
+import AboutPage from '../components/AboutPage';
+---
+
+<BaseLayout title="About">
+    <AboutPage client:load />
+</BaseLayout>

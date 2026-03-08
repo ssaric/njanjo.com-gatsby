@@ -1,13 +1,18 @@
-// components/Social.tsx
 import React from 'react';
 import type { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import type { IconName } from '@fortawesome/fontawesome-svg-core';
+import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
+const brandIconMap: Record<string, IconDefinition> = {
+    'github': faGithub,
+    'linkedin': faLinkedin,
+};
 
 interface SocialProps {
     text: string;
     href: string;
-    icon: IconName;
+    icon: string;
 }
 
 const Social: FC<SocialProps> = ({ icon, href, text }) => (
@@ -27,7 +32,7 @@ const Social: FC<SocialProps> = ({ icon, href, text }) => (
      "
         >
             <div className="btn__icon m-0">
-                <FontAwesomeIcon icon={['fab', icon]} size="1x" />
+                <FontAwesomeIcon icon={brandIconMap[icon]} size="1x" />
             </div>
             <span className="btn__text
             group-hover:text-primary-200
