@@ -33,7 +33,7 @@ const Project: FC<ProjectProps> = ({
             <img
                 className="w-full h-full object-cover"
                 alt={`${title} project`}
-                src={picture}
+                src={typeof picture === 'string' ? picture : picture.src}
             />
         </div>
         <h6

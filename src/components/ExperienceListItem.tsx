@@ -29,7 +29,7 @@ const ExperienceListItem: FC<ExperienceListItemProps> = ({
                 <img
                     alt={`${title}-pic`.toLowerCase()}
                     className="h-[25px] w-[30px] object-scale-down mr-2.5"
-                    src={logo}
+                    src={typeof logo === 'string' ? logo : logo.src}
                 />
                 <div className="flex flex-col">
                     <h5 className="font-bold leading-none">{title}</h5>

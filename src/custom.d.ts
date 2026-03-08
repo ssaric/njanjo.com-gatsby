@@ -1,15 +1,15 @@
 declare module "*.png" {
-    const content: string;
+    const content: { src: string; width: number; height: number; format: string };
     export default content;
 }
 
 declare module "*.jpg" {
-    const content: string;
+    const content: { src: string; width: number; height: number; format: string };
     export default content;
 }
 
 declare module "*.webp" {
-    const content: string;
+    const content: { src: string; width: number; height: number; format: string };
     export default content;
 }
 
@@ -26,6 +26,6 @@ declare module "*.svg" {
 }
 
 declare module "*.gif" {
-    const content: string;
+    const content: { src: string; width: number; height: number; format: string };
     export default content;
 }

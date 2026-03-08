@@ -11,7 +11,7 @@ const Profile: FC = () => (
   ">
         <img
             alt="profile"
-            src={ProfileImage}
+            src={typeof ProfileImage === 'string' ? ProfileImage : ProfileImage.src}
             className="aspect-auto h-full large:mt-2.5"
         />
         <div className="
