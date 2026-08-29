@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+    /* Fluid type: 16px up to ~1000px wide, growing to 22px on very large screens */
+    html {
+        font-size: clamp(16px, calc(12px + 0.4vw), 22px);
+    }
+
     body {
         @apply bg-neutral-700 fixed font-sans top-0 left-0 p-0 m-0 right-0 bottom-0 flex box-border;
     }
@@ -177,4 +182,10 @@
     .delay-600 { animation-delay: 600ms; }
     .delay-700 { animation-delay: 700ms; }
     .delay-800 { animation-delay: 800ms; }
+
+    @media (prefers-reduced-motion: reduce) {
+        .animate-fade-up, .animate-fade-in, .animate-slide-in, .animate-pulse-slow {
+            animation: none;
+        }
+    }
 }

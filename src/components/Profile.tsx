@@ -1,6 +1,7 @@
 import React from 'react';
 import type { FC } from 'react';
 import ProfileImage from '../images/profile.jpg';
+import { contact } from '../cv';
 
 const Profile: FC = () => (
     <div className="
@@ -19,8 +20,8 @@ const Profile: FC = () => (
             p-5 pt-12
             flex flex-col items-start
         ">
-            <h3 className="text-[28px] font-bold leading-tight">Sanjin Šarić</h3>
-            <span className="text-body2 text-primary-200 mt-1">Senior Software Engineer</span>
+            <h3 className="text-[1.75rem] font-bold leading-tight">{contact.name}</h3>
+            <span className="text-body2 text-primary-200 mt-1">{contact.headline}</span>
         </div>
     </div>
 );

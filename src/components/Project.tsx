@@ -36,7 +36,7 @@ const Project: FC<ProjectProps> = ({
         </div>
         <div className="p-5">
             <div className="flex items-start justify-between gap-2 mb-2">
-                <h6 className="text-neutral-50 font-semibold text-[16px] leading-snug">
+                <h6 className="text-neutral-50 font-semibold text-[1rem] leading-snug">
                     {title}
                 </h6>
                 <FontAwesomeIcon
@@ -44,7 +44,7 @@ const Project: FC<ProjectProps> = ({
                     className="text-neutral-400 text-xs mt-1 flex-shrink-0 group-hover:text-primary-200 transition-colors"
                 />
             </div>
-            <p className="text-neutral-300 text-[13px] leading-relaxed line-clamp-3">
+            <p className="text-neutral-300 text-[0.8125rem] leading-relaxed line-clamp-3">
                 {description}
             </p>
         </div>

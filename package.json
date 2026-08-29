@@ -10,7 +10,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "typecheck": "astro check && tsc --noEmit"
+    "typecheck": "astro check && tsc --noEmit",
+    "cv": "tsx scripts/generate-cv.ts"
   },
   "dependencies": {
     "@astrojs/react": "^4.2.0",
@@ -34,7 +35,9 @@
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.5.3",
+    "puppeteer-core": "^25.9.0",
     "tailwindcss": "^3.4.17",
+    "tsx": "^4.23.12",
     "typescript": "^5.7.3"
   },
   "packageManager": "yarn@4.5.1"

@@ -2,6 +2,9 @@ import React from 'react';
 import type { FC } from 'react';
 import Logo from '../images/logo.svg?react';
 import Layout from './Layout';
+import { contact } from '../cv';
+
+const years = new Date().getFullYear() - new Date(contact.careerStart).getFullYear();
 
 const IndexPage: FC = () => (
     <Layout>
@@ -15,7 +18,7 @@ const IndexPage: FC = () => (
             "/>
 
             {/* Main content */}
-            <div className="flex flex-col items-start justify-center flex-1 z-20 px-8 lg:px-20 max-w-[800px] mx-auto">
+            <div className="flex flex-col items-start justify-center flex-1 z-20 px-8 lg:px-20 max-w-[56rem] mx-auto">
 
                 {/* Greeting */}
                 <span className="
@@ -28,7 +31,7 @@ const IndexPage: FC = () => (
                 {/* Name */}
                 <h1 className="
                     text-neutral-50 font-bold leading-[1.05]
-                    text-[42px] sm:text-[56px] lg:text-[72px]
+                    text-[2.625rem] sm:text-[3.5rem] lg:text-[4.5rem]
                     mb-3 animate-fade-up delay-100
                 ">
                     Sanjin Šarić
@@ -37,10 +40,10 @@ const IndexPage: FC = () => (
                 {/* Role */}
                 <h2 className="
                     text-neutral-200 font-normal
-                    text-[20px] sm:text-[28px] lg:text-[36px]
+                    text-[1.25rem] sm:text-[1.625rem] lg:text-[1.875rem]
                     mb-6 animate-fade-up delay-200
                 ">
-                    Senior Software Engineer
+                    {contact.headline}
                 </h2>
 
                 {/* Divider */}
@@ -48,8 +51,8 @@ const IndexPage: FC = () => (
 
                 {/* Tagline */}
                 <p className="
-                    text-neutral-100 text-[16px] sm:text-[18px] leading-relaxed
-                    max-w-[520px] mb-8 animate-fade-up delay-400
+                    text-neutral-100 text-[1rem] sm:text-[1.125rem] leading-relaxed
+                    max-w-[32.5rem] mb-8 animate-fade-up delay-400
                 ">
                     Product engineering mindset — UX is king, code follows.
                     <br />
@@ -61,17 +64,17 @@ const IndexPage: FC = () => (
                 {/* Stats row */}
                 <div className="flex gap-8 mb-10 animate-fade-up delay-500">
                     <div className="flex flex-col">
-                        <span className="text-primary-200 text-[28px] font-bold leading-none">10+</span>
+                        <span className="text-primary-200 text-[1.75rem] font-bold leading-none">{years}+</span>
                         <span className="text-neutral-300 text-caption uppercase tracking-wider mt-1">Years</span>
                     </div>
                     <div className="w-px bg-neutral-500" />
                     <div className="flex flex-col">
-                        <span className="text-primary-200 text-[28px] font-bold leading-none">End to End</span>
+                        <span className="text-primary-200 text-[1.75rem] font-bold leading-none">End to End</span>
                         <span className="text-neutral-300 text-caption uppercase tracking-wider mt-1">Feature Delivery</span>
                     </div>
                     <div className="w-px bg-neutral-500" />
                     <div className="flex flex-col">
-                        <span className="text-primary-200 text-[28px] font-bold leading-none">Full Stack</span>
+                        <span className="text-primary-200 text-[1.75rem] font-bold leading-none">Full Stack</span>
                         <span className="text-neutral-300 text-caption uppercase tracking-wider mt-1">Engineering</span>
                     </div>
                 </div>
@@ -95,6 +98,15 @@ const IndexPage: FC = () => (
                         "
                     >
                         Projects
+                    </a>
+                    <a
+                        href="/cv.pdf"
+                        className="
+                            px-6 py-3 text-neutral-300 text-sm font-semibold uppercase tracking-wider
+                            rounded hover:text-primary-200 transition-colors duration-200
+                        "
+                    >
+                        Download CV
                     </a>
                 </div>
             </div>

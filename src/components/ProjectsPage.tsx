@@ -7,14 +7,14 @@ import Project from './Project';
 const ProjectsPage: FC = () => (
     <Layout>
         <div className="flex flex-col flex-1 overflow-y-auto px-6 lg:px-10 py-10 lg:pt-20">
-            <div className="max-w-[900px] mx-auto w-full">
+            <div className="max-w-[56.25rem] mx-auto w-full">
                 <span className="text-primary-200 text-caption font-semibold tracking-widest uppercase mb-2 block animate-fade-up">
                     Side work
                 </span>
-                <h2 className="text-neutral-50 font-bold text-[32px] lg:text-[40px] mb-2 animate-fade-up delay-100">
+                <h2 className="text-neutral-50 font-bold text-[2rem] lg:text-[2.5rem] mb-2 animate-fade-up delay-100">
                     Projects
                 </h2>
-                <p className="text-neutral-300 text-[15px] mb-10 animate-fade-up delay-200">
+                <p className="text-neutral-300 text-[0.9375rem] mb-10 animate-fade-up delay-200">
                     Articles, tools, and experiments I've built outside of work.
                 </p>
 
