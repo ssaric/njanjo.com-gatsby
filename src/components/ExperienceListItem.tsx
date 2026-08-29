@@ -28,7 +28,7 @@ const ExperienceListItem: FC<ExperienceListItemProps> = ({
                 before:whitespace-pre before:-left-[8.4375rem] before:absolute
                 before:font-semibold before:text-right before:text-caption before:text-neutral-300
                 before:flex before:top-1/2 before:-translate-y-1/2 before:justify-end before:w-[6.25rem]
-                after:absolute after:-left-[21.5px] after:top-1/2 after:-translate-y-1/2
+                after:absolute after:left-[calc(-0.9375rem-6.5px)] after:top-1/2 after:-translate-y-1/2
                 after:bg-primary-300 after:rounded-full after:h-[11px] after:w-[11px]
                 after:block after:content-['']
                 after:ring-2 after:ring-neutral-700
