@@ -29,7 +29,7 @@ export const contact = {
     location: 'Langenfeld, Germany',
     email: 'sanjin.saric1991@gmail.com',
     website: 'njanjo.com',
-    linkedin: 'https://www.linkedin.com/in/sanjin-%C5%A1ari%C4%87-9a1781105/',
+    linkedin: 'https://www.linkedin.com/in/njanjo/',
     github: 'https://github.com/ssaric',
     birthDate: '1991-10-03',
     careerStart: '2015-04-01',

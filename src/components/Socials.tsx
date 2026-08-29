@@ -4,11 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
 import Email from './Email';
+import { contact } from '../cv';
 
 const Socials: FC = () => (
     <div className="flex items-center gap-3 mt-3 flex-wrap">
         <a
-            href="https://www.linkedin.com/in/sanjin-%C5%A1ari%C4%87-9a1781105/"
+            href={contact.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="
@@ -22,7 +23,7 @@ const Socials: FC = () => (
             <span>LinkedIn</span>
         </a>
         <a
-            href="https://github.com/ssaric"
+            href={contact.github}
             target="_blank"
             rel="noopener noreferrer"
             className="
